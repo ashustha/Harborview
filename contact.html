@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Barlow&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Harborview Realstate</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-logo">
+                <figure>
+                    <a href="index.html"><img src="./img/logo.png" alt="Harborview Logo"></a>
+                </figure>
+            </div>
+            <nav class="nav-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="services.html">Our services</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+        <main>
+            <section class="contact-form">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <p>Have a question or want to get in touch? Fill out the form below, and we'll get back to you as soon as possible.</p>
+                    <form action="contact.php" method="POST" id="contact-form" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span id="name-error" class="error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span id="email-error" class="error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <span id="message-error" class="error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- Your logo or branding can go here -->
+                    <img src="img/logo.png" alt="Your Logo">
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <p>Contact Us:</p>
+                    <p>Email: contact@harborview.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+            </div>
+        </footer>
+    
+    
+  <script src="./script.js"></script>
+</body>
+</html>
