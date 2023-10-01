@@ -1057,13 +1057,10 @@ footer {
     display: inline-block;
 }
 
-.btn:hover {
-    background-color: #0056b3;
-}
-
 /* Media query for responsiveness (adjust as needed) */
 @media screen and (max-width: 768px) {
     .contact-form {
         padding: 20px 10px;
     }
 }
+
